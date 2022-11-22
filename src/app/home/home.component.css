@@ -1,0 +1,39 @@
+body{
+    --opacidad-negro: 0.6;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url('/assets/hotel.jpg');
+    background-size: 100% 145%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    filter: grayscale(75%);
+}
+
+.caja{
+    width: 800px;
+    padding: 40px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #061e2685;
+}
+hr{color:aliceblue;}
+h1, h4, hr{
+    margin-bottom: 5%;
+}
+
+@media screen and (max-width: 800px) {
+    body{
+        background-size: 100% 110%;  
+    }       
+    .caja{
+        width: 300px;
+        padding: 40px;
+        border-radius: 20px;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #061e2685;
+    }
+}

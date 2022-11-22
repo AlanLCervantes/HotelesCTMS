@@ -1,0 +1,19 @@
+.about{
+    margin-left: 2%;
+    margin-top: 45%;
+    background-color: aqua;
+    width: 35%;
+    height: 0;
+}
+
+a{
+    background-color: rgba(105, 102, 96, 0.281);
+    color: cornsilk;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 300px;
+}
+a:hover{    
+    color: rgb(253, 252, 245);   
+}

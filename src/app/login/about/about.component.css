@@ -1,0 +1,70 @@
+.about{
+    margin-top: 170%;
+    margin-left: 2%;
+    background-color: aqua;
+    width: 35%;
+    height: 0;
+}
+
+a{
+    background-color: rgba(105, 102, 96, 0.281);
+    color: cornsilk;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 300px;
+}
+a:hover{    
+    color: rgb(253, 252, 245);   
+}
+
+@media screen and (min-height: 600px){
+    .about{
+        margin-top: 45%;
+    }
+    hr{
+        border: 0;
+    }
+}
+@media screen and (min-height: 667px){
+    .about{
+        margin-top: 135%;
+    }
+}
+@media screen and (min-height: 700px){
+    .about{
+        margin-top: 155%;
+    }
+}
+@media screen and (min-height: 720px){
+    .about{
+        margin-top: 100%;
+    }
+}
+@media screen and (min-height: 800px){
+    .about{
+        margin-top: 170%;
+    }
+}
+@media screen and (min-height: 800px) and (min-width: 1280px){
+    .about{
+        margin-top: 50%;
+    }
+}
+@media screen and (min-height: 900px) and (min-width: 1280px){
+    .about{
+        
+        margin-left: 33%;
+        margin-top: 45%;
+    }
+}
+@media screen and (min-height: 1024px){
+    .about{
+        margin-top: 110%;
+    }
+}
+@media screen and (min-height: 1180px){
+    .about{
+        margin-top: 120%;
+    }
+}

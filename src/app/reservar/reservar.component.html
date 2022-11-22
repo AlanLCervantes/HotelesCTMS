@@ -1,0 +1,64 @@
+<body>
+    <app-navbar-home></app-navbar-home>
+    <div class="caja text-center">
+        
+        <h1 class="text-light text-uppercase">Reservar</h1>
+        <hr>
+        <div class="input-group" id="codigoDescuento">
+            <span class="input-group-text">
+                Usuario
+            </span>    
+            <select class="form-select" id="formaPago" aria-label="Default select example">
+                <option selected>Elije una opcion</option>
+                <option value="1">Tarjeta de Debito</option>
+                <option value="2">Tarjeta de Credito</option>
+                <option value="3">Transferencia Bancaria</option>
+                <!-- CONDICIONAR EL TIPO DE USUARI: RESERVADOR - CLIENTE -->
+                <option value="4" style="display: none;">Efectivo</option>
+            </select>
+        </div>
+
+        <div class="input-group">   
+            <span class="input-group-text">
+                Tipo de Habitación
+            </span>    
+            <select class="form-select" id="habitacion" aria-label="Default select example">
+                <option selected>Elije una opcion</option>
+                <option value="1">Sencilla</option>
+                <option value="2">Doble</option>
+                <option value="3">Triple</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <span class="input-group-text">Inicio de estancia</span>
+            <input type="date" class="form-control" name="inicioEstancia" id="inicioEstancia">
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-text">Fin de estancia</span>
+            <input type="date" class="form-control" name="finEstancia" id="finEstancia">
+        </div>
+            
+        <div class="input-group" id="codigoDescuento">
+            <span class="input-group-text">
+                Ingrese su codigo de descuento
+            </span>
+            <input type="text" class="form-control" name="descuento" id="descuento" placeholder="XXXX-XXXX-XXXX-XXXX">
+        </div>
+
+        <div class="input-group" id="codigoDescuento">
+            <span class="input-group-text">
+                Forma de pago
+            </span>    
+            <select class="form-select" id="formaPago" aria-label="Default select example">
+                <option selected>Elije una opcion</option>
+                <option value="1">Tarjeta de Debito</option>
+                <option value="2">Tarjeta de Credito</option>
+                <option value="3">Transferencia Bancaria</option>
+                <!-- CONDICIONAR EL TIPO DE USUARI: RESERVADOR - CLIENTE -->
+                <option value="4" style="display: none;">Efectivo</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-outline-primary"><a href="efectivo">PAGAR</a></button>
+    </div>
+</body>

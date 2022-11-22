@@ -1,0 +1,66 @@
+body{
+    --opacidad-negro: 0.6;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url('/assets/hotel.jpg');
+    background-size: 100% 145%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    filter: grayscale(75%);
+}
+
+.caja{
+    width: 800px;
+    padding: 40px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #061e2685;
+}
+hr{color:aliceblue;}
+h1, hr{
+    margin-bottom: 5%;
+}
+.input-group{
+    margin-bottom: 2%;
+}
+.input-group-text{
+    width: 290px;
+    background-color: #061e2685;
+    color: #b9ffd6;
+    text-transform: uppercase;
+    border-color: #2ecc71;
+}
+
+.form-select, .form-control{
+    background-color: #061e2685;
+    color: cornsilk;
+    text-align: center;
+    text-transform: capitalize;
+    border-color: #2ecc71;
+}
+input[type="date"]::-webkit-calendar-picker-indicator{
+    cursor: pointer;
+    filter: invert(0.9);
+}
+input[type="date"]{
+    text-transform: uppercase;
+}
+select{
+    background-image: url("/assets/arrow.jng");
+}
+@media screen and (max-width: 800px) {
+    body{
+        background-size: 100% 110%;  
+    }       
+    .caja{
+        width: 350px;
+        padding: 40px;
+        border-radius: 20px;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #061e2685;
+    }
+}
