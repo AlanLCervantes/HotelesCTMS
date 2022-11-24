@@ -1,19 +1,4 @@
-let mysql      = require('mysql');
-let connection = mysql.createConnection({
-    host     : 'localhost',
-    user     : 'root',
-    password : 'root',
-    database : 'hotelesCTMS' 
-});
-
-connection.connect(function(err) {
-if (err) {
-    console.error('error connecting: ' + err.stack);
-    return;
-}
-
-console.log('connected as id ' + connection.threadId);
-}); 
+import { createConnection } from 'mysql';
 
 /*
   RowDataPacket {
@@ -41,6 +26,17 @@ console.log('connected as id ' + connection.threadId);
 
 function myBox(){
     console.log("Hey");
+let connection = createConnection({
+    host     : 'localhost',
+    user     : 'root',
+    password : 'root',
+    database : 'hotelesCTMS' 
+});
+
+connection.connect()
+
+console.log('connected as id ' + connection.threadId);
+
     alert("checkbox seleccionado");
 }
 
