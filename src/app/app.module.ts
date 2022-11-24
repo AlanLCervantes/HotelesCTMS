@@ -18,8 +18,10 @@ import { NavbarHomeComponent } from './home/navbar-home/navbar-home.component';
 import { FacturarComponent } from './facturar/facturar.component';
 import { ReservarComponent } from './reservar/reservar.component';
 import { ReportesComponent } from './reportes/reportes.component';
-import { TarjetasComponent } from './reservar/tarjetas/tarjetas.component';
 import { EfectivoComponent } from './reservar/efectivo/efectivo.component';
+import { DebitoComponent } from './reservar/debito/debito.component';
+import { CreditoComponent } from './reservar/credito/credito.component';
+import { TransferenciaComponent } from './reservar/transferencia/transferencia.component';
 
 @NgModule({
   declarations: [
@@ -39,8 +41,10 @@ import { EfectivoComponent } from './reservar/efectivo/efectivo.component';
     FacturarComponent,
     ReservarComponent,
     ReportesComponent,
-    TarjetasComponent,
     EfectivoComponent,
+    DebitoComponent,
+    CreditoComponent,
+    TransferenciaComponent,
   ],
   imports: [
     BrowserModule,

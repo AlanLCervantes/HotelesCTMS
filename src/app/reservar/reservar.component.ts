@@ -11,5 +11,4 @@ export class ReservarComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }
