@@ -7,8 +7,11 @@ import { HomeIndexComponent } from './home-index/home-index.component';
 import { HomeComponent } from './home/home.component';
 import { RememberComponent } from './remember/remember.component';
 import { ReportesComponent } from './reportes/reportes.component';
+import { CreditoComponent } from './reservar/credito/credito.component';
+import { DebitoComponent } from './reservar/debito/debito.component';
 import { EfectivoComponent } from './reservar/efectivo/efectivo.component';
 import { ReservarComponent } from './reservar/reservar.component';
+import { TransferenciaComponent } from './reservar/transferencia/transferencia.component';
 import { TcComponent } from './tc/tc.component';
 
 const routes: Routes = [
@@ -21,7 +24,10 @@ const routes: Routes = [
   {path:'reservar', component:ReservarComponent},
   { path:'facturar', component:FacturarComponent},
   {path:'reportes', component:ReportesComponent},
-  {path:'efectivo', component:EfectivoComponent}
+  {path:'efectivo', component:EfectivoComponent},
+  {path:'transferencia', component:TransferenciaComponent},
+  {path:'debito', component:DebitoComponent},
+  {path:'credito', component:CreditoComponent}
 ];
 
 @NgModule({
