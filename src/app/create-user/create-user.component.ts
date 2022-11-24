@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateUserComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    
+  }
 
   ngOnInit(): void {
   }
-
+  
+  myBox(){
+    alert("Checked");
+  }
 }
+

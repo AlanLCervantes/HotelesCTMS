@@ -9,19 +9,30 @@
             <span class="input-group-text">
                 Ingrese su nombre
             </span>
-            <input type="text" class="form-control" id="validationCustom01" required placeholder="Nombre(s)">
+            <input type="text" class="form-control" id="nombre" required placeholder="Nombre(s)">
         </div>
         <div class="input-group" id="codigoDescuento">
             <span class="input-group-text">
                 Ingrese su apellido
             </span>
-            <input type="text" class="form-control" id="validationCustom02" required placeholder="Apellidos(s)">
+            <input type="text" class="form-control" id="apellido" required placeholder="Apellidos(s)">
         </div>
         <div class="input-group" id="codigoDescuento">
             <span class="input-group-text">
                 Crea un nombre de usuario
             </span>
-            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required placeholder="@user">
+            <input type="text" class="form-control" id="usuario" aria-describedby="usuario" required placeholder="@user">
+        </div>
+        <div class="input-group" id="codigoDescuento">
+            <span class="input-group-text">
+                Identificar en caja con
+            </span>
+            <select class="form-select" id="idTipo" aria-label="Default select example">
+                <option selected>Elije una opcion</option>
+                <option value="1">INE</option>
+                <option value="2">Pasaporte</option>
+                <option value="3">Visa</option>
+            </select>
         </div>
         
         
@@ -29,21 +40,21 @@
             <span class="input-group-text">
                 Domicilio
             </span>
-            <input type="text" class="form-control" id="validationCustom03" required placeholder="Arabia Saudita 170, Juanacatlan">
+            <input type="text" class="form-control" id="domicilio" required placeholder="Arabia Saudita 170, Juanacatlan">
         </div>
         
         <div class="input-group" id="codigoDescuento">
             <span class="input-group-text">
                 Estado
             </span>
-            <input type="text" class="form-control" id="validationCustom03" required placeholder="Jalisco">
+            <input type="text" class="form-control" id="estado" required placeholder="Jalisco">
         </div>
         
         <div class="input-group" id="codigoDescuento">
             <span class="input-group-text">
                 Codigo Postal
             </span>
-            <input type="text" class="form-control" id="validationCustom05" required placeholder="48880">
+            <input type="text" class="form-control" id="codigoPostal" required placeholder="48880">
         </div>
 
         <div class="input-group" id="codigoDescuento">
@@ -64,29 +75,29 @@
             <span class="input-group-text">
                 Numero Telefonico
             </span>
-            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required placeholder="3326526756">
+            <input type="text" class="form-control" id="telefono" aria-describedby="inputGroupPrepend" required placeholder="3326526756">
         </div>
         
         <div id="clave" class="input-group">
             <span class="input-group-text">
                 Contraseña
             </span>  
-            <input type="password" class="form-control" id="validationCustom02" required placeholder="•••••••••••">
+            <input type="password" class="form-control" id="contraseña" required placeholder="•••••••••••">
         </div>
         <div id="clave" class="input-group">
             <span class="input-group-text">
                 Verificar Contraseña
             </span>          
-            <input type="password" class="form-control" id="validationCustom02" required placeholder="•••••••••••">
+            <input type="password" class="form-control" id="vContraseña" required placeholder="•••••••••••">
         </div>
 
         <div id="clave" class="input-group">    
-            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <input class="form-check-input" type="checkbox" value="" id="box" (click)="myBox();" required>
             <label class="form-check-label" for="invalidCheck">
                 <a href="tc">Aceptar Terminos y Condiciones</a>
             </label>
         </div>
-        
-        <button type="submit" class="btn btn-outline-primary">Crear Usuario</button>
+    
+        <button type="button" class="btn btn-outline-primary">Crear Usuario</button>
     </div>
 </body>

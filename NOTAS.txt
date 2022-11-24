@@ -1,1 +1,3 @@
 ng g c "nombre del template"
+
+ng g c "script.js"
