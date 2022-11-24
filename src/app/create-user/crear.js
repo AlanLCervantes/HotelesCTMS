@@ -40,6 +40,7 @@ console.log('connected as id ' + connection.threadId);
 */
 
 function myBox(){
+    console.log("Hey");
     alert("checkbox seleccionado");
 }
 
